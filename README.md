@@ -104,7 +104,10 @@ Default output format [None]: [ just enter ]
 ```
 
 ---
-
+Now Run
+```bash
+terraform apply -auto-approve
+```
 
 # 🔐 Configure IAM OIDC Provider
 
