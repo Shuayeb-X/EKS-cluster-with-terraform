@@ -47,7 +47,7 @@ it will create the eks cluster.
 
 ```bash
 curl "https://awscli.amazonaws.com/awscli-exe-linux-x86_64.zip" -o "awscliv2.zip"
-```
+
 #Install unzip Package
 sudo apt update
 sudo apt install unzip -y
@@ -105,40 +105,6 @@ Default output format [None]: [ just enter ]
 
 ---
 
-## Useful Commands
-
-### Check Current Configuration
-
-```bash
-aws configure list
-```
-
-### List S3 Buckets
-
-```bash
-aws s3 ls
-```
-
-### Update AWS CLI
-
-```bash
-sudo ./aws/install --update
-```
-
-### Uninstall AWS CLI
-
-```bash
-sudo rm -rf /usr/local/aws-cli
-sudo rm /usr/local/bin/aws
-```
-
----
-
-## Official Documentation
-
-- AWS CLI Documentation: https://docs.aws.amazon.com/cli/
-
-
 
 # 🔐 Configure IAM OIDC Provider
 
@@ -177,12 +143,12 @@ After creating the IAM service account:
 terraform apply -auto-approve
 ```
 Creating Cluster
-![image alt ] (https://github.com/Shuayeb-X/Mega-Capstone-Devops-CI-CD-Project/blob/22a037234fafe9fcafc0977fcaa98eedf44f14f9/creating%20cluster.png)
+![image alt ](https://github.com/Shuayeb-X/Mega-Capstone-Devops-CI-CD-Project/blob/22a037234fafe9fcafc0977fcaa98eedf44f14f9/creating%20cluster.png)
 
 Cluster created successfully
 
 Creating Cluster
-![image alt ] (https://github.com/Shuayeb-X/Mega-Capstone-Devops-CI-CD-Project/blob/22a037234fafe9fcafc0977fcaa98eedf44f14f9/cluster%20created.png)
+![image alt ](https://github.com/Shuayeb-X/Mega-Capstone-Devops-CI-CD-Project/blob/22a037234fafe9fcafc0977fcaa98eedf44f14f9/cluster%20created.png)
 
 Verify EKS Cluster
 
@@ -223,6 +189,39 @@ The EBS CSI Driver enables:
 - PVC Support in Kubernetes
 
 ---
+## Useful Commands
+
+### Check Current Configuration
+
+```bash
+aws configure list
+```
+
+### List S3 Buckets
+
+```bash
+aws s3 ls
+```
+
+### Update AWS CLI
+
+```bash
+sudo ./aws/install --update
+```
+
+### Uninstall AWS CLI
+
+```bash
+sudo rm -rf /usr/local/aws-cli
+sudo rm /usr/local/bin/aws
+```
+
+---
+
+## Official Documentation
+
+- AWS CLI Documentation: https://docs.aws.amazon.com/cli/
+
 
 # RBAC
  
