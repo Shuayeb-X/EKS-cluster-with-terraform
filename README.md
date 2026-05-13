@@ -1,3 +1,39 @@
+# AWS CLI v2 Installation Guide (Ubuntu/Linux x86_64)
+
+## Download AWS CLI v2
+
+```bash
+curl "https://awscli.amazonaws.com/awscli-exe-linux-x86_64.zip" -o "awscliv2.zip"
+
+#Install unzip Package
+sudo apt update
+sudo apt install unzip -y
+
+#Extract the ZIP File
+
+unzip awscliv2.zip
+
+#Install AWS CLI
+
+sudo ./aws/install
+```
+
+---
+
+## Verify Installation
+
+```bash
+aws --version
+```
+
+Example output:
+
+```bash
+aws-cli/2.x.x Python/3.x Linux/x86_64
+```
+
+---
+
 # EKS-cluster-with-terraform
 Visit the site to install according to your vm or os:
 [Terraform official site ](https://developer.hashicorp.com/terraform/install#linux)
@@ -40,41 +76,7 @@ terraform apply -auto-approve
 ```
 it will create the eks cluster. Before that set up set up AWS CLI and connect with your cloud.
 
-# AWS CLI v2 Installation Guide (Ubuntu/Linux x86_64)
 
-## Download AWS CLI v2
-
-```bash
-curl "https://awscli.amazonaws.com/awscli-exe-linux-x86_64.zip" -o "awscliv2.zip"
-
-#Install unzip Package
-sudo apt update
-sudo apt install unzip -y
-
-#Extract the ZIP File
-
-unzip awscliv2.zip
-
-#Install AWS CLI
-
-sudo ./aws/install
-```
-
----
-
-## Verify Installation
-
-```bash
-aws --version
-```
-
-Example output:
-
-```bash
-aws-cli/2.x.x Python/3.x Linux/x86_64
-```
-
----
 
 ## Configure AWS CLI
 
